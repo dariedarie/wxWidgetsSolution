@@ -54,10 +54,10 @@ SolutionProject/
 ### 1. Install wxWidgets
 
 1. Download wxWidgets 3.3.0 from [https://www.wxwidgets.org/downloads/](https://www.wxwidgets.org/downloads/)
-2. Extract to `C:\Users\[YourUsername]\Desktop\Task\wxWidgets-3.3.0\`
+2. Extract to `Folder\wxWidgets-3.3.0\`
 3. Build wxWidgets libraries:
    ```bash
-   cd C:\Users\[YourUsername]\Desktop\Task\wxWidgets-3.3.0\build\msw
+   cd Folder\wxWidgets-3.3.0\build\msw
    nmake -f makefile.vc BUILD=release TARGET_CPU=X64
    ```
 
@@ -117,53 +117,3 @@ SolutionProject/
 - **OpenGL**: Graphics rendering
 - **Visual Studio 2022**: Development environment
 - **Windows SDK**: Platform-specific libraries
-
-## Troubleshooting
-
-### Common Issues
-
-1. **wxWidgets not found**
-   - Ensure wxWidgets is installed and built correctly
-   - Check include and library paths in project settings
-
-2. **OpenGL errors**
-   - Verify graphics drivers are up to date
-   - Ensure OpenGL libraries are available
-
-3. **Build errors**
-   - Clean and rebuild the solution
-   - Check Visual Studio platform toolset version
-
-### Build Configuration
-
-The project is configured for:
-- **Platform**: x64
-- **Configuration**: Release (recommended) or Debug
-- **Character Set**: Unicode
-- **Platform Toolset**: v143 (Visual Studio 2022)
-
-## Evaluation Criteria Met
-
-✅ **Clear code organization and modular design**
-- Separated concerns: GLCanvas, ControlPanel, MainFrame
-- Clean class interfaces and proper encapsulation
-
-✅ **Smooth integration of wxWidgets and OpenGL**
-- Proper context management and event handling
-- Seamless overlay rendering
-
-✅ **Proper event handling and interactivity**
-- Mouse events, window resize, control interactions
-- Real-time visual feedback
-
-✅ **Responsive UI and visual feedback**
-- Immediate response to control changes
-- Hover effects and smooth rendering
-
-✅ **Robustness: proper error handling and resource cleanup**
-- RAII principles for resource management
-- Proper OpenGL context lifecycle management
-
-## License
-
-This project is created for technical assessment purposes. 
