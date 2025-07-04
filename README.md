@@ -28,21 +28,6 @@ A wxWidgets desktop application that demonstrates integration between GUI compon
 - Responsive UI with visual feedback
 - Clean resource management and error handling
 
-## Project Structure
-
-```
-SolutionProject/
-├── wxWidgetsTask/
-│   ├── main.cpp              # Main application code
-│   ├── wxWidgetsTask.vcxproj # Visual Studio project file
-│   └── wxWidgetsTask.vcxproj.filters
-├── x64/
-│   ├── Debug/                # Debug build output
-│   └── Release/              # Release build output
-├── SolutionProject.sln       # Visual Studio solution
-└── README.md                 # This file
-```
-
 ## Prerequisites
 
 - **Visual Studio 2022** (or compatible version)
